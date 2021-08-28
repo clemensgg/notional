@@ -1,0 +1,4 @@
+sifchain
+export binary_link=https://github.com/Sifchain/sifnode/releases/download/betanet-0.9.5/sifnoded-betanet-0.9.5-linux-amd64.zip
+export genesis_link=https://github.com/Sifchain/networks/raw/master/mainnet/sifchain-1/genesis.json.gz
+export snapshot_link=http://135.181.60.250:8081/sifchain/
