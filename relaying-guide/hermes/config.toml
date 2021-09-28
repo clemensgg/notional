@@ -101,68 +101,68 @@ list = [
    ['transfer', 'channel-0'],['transfer', 'channel-1'],['transfer', 'channel-2'],['transfer', 'channel-3'],['transfer', 'channel-6'],['transfer', 'channel-15'],['transfer', 'channel-37']
  ]
 
-#[[chains]]
-#id = 'akashnet-2'
-#rpc_addr = 'http://127.0.0.1:2021'
-#websocket_addr = 'ws://127.0.0.1:2021/websocket'
-#grpc_addr = 'http://127.0.0.1:2022'
-#rpc_timeout = '10s'
-#account_prefix = 'akash'
-#key_name = 'akash'
-#store_prefix = 'ibc'
-#max_gas = 2000000
-#gas_price = { price = 0.001, denom = 'uakt' }
-#gas_adjustment = 0.1
-#clock_drift = '5s'
-#trusting_period = '14days'
-#trust_threshold = { numerator = '1', denominator = '3' }
-#[chains.packet_filter]
-#policy = 'allow'
-#list = [
+[[chains]]
+id = 'akashnet-2'
+rpc_addr = 'http://127.0.0.1:2021'
+websocket_addr = 'ws://127.0.0.1:2021/websocket'
+grpc_addr = 'http://127.0.0.1:2022'
+rpc_timeout = '10s'
+account_prefix = 'akash'
+key_name = 'akash'
+store_prefix = 'ibc'
+max_gas = 2000000
+gas_price = { price = 0.001, denom = 'uakt' }
+gas_adjustment = 0.1
+clock_drift = '5s'
+trusting_period = '14days'
+trust_threshold = { numerator = '1', denominator = '3' }
+[chains.packet_filter]
+policy = 'allow'
+list = [
 #   ['transfer', 'channel-17'],['transfer', 'channel-11'],['transfer', 'channel-23'],['transfer', 'channel-22'],['transfer', 'channel-20'],['transfer', 'channel-9'],['transfer', 'channel-18']
-# ]
+ ]
 
-#[[chains]]
-#id = 'sentinelhub-2'
-#rpc_addr = 'http://127.0.0.1:2031'
-#grpc_addr = 'http://127.0.0.1:2032'
-#websocket_addr = 'ws://127.0.0.1:2031/websocket'
-#account_prefix = 'sent'
-#key_name = 'sentinel'
-#store_prefix = 'ibc'
-#max_gas = 2000000
-#gas_price = { price = 0.001, denom = 'udvpn' }
-#gas_adjustment = 0.1
-#clock_drift = '5s'
-#trusting_period = '14days'
-#trust_threshold = { numerator = '1', denominator = '3' }
-#[chains.packet_filter]
-#policy = 'allow'
-#list = [
+[[chains]]
+id = 'sentinelhub-2'
+rpc_addr = 'http://127.0.0.1:2031'
+grpc_addr = 'http://127.0.0.1:2032'
+websocket_addr = 'ws://127.0.0.1:2031/websocket'
+account_prefix = 'sent'
+key_name = 'sentinel'
+store_prefix = 'ibc'
+max_gas = 2000000
+gas_price = { price = 0.001, denom = 'udvpn' }
+gas_adjustment = 0.1
+clock_drift = '5s'
+trusting_period = '14days'
+trust_threshold = { numerator = '1', denominator = '3' }
+[chains.packet_filter]
+policy = 'allow'
+list = [
 #   ['transfer', 'channel-0'],['transfer', 'channel-12']
-# ]
+ ]
 
 
-#[[chains]]
-#id = 'irishub-1'
-#rpc_addr = 'http://127.0.0.1:2121'
-#grpc_addr = 'http://127.0.0.1:2122'
-#websocket_addr = 'ws://127.0.0.1:2121/websocket'
-#rpc_timeout = '10s'
-#account_prefix = 'iaa'
-#key_name = 'iris'
-#store_prefix = 'ibc'
-#max_gas = 2000000
-#max_tx_size = 1800000
-#gas_price = { price = 0.001, denom = 'uiris' }
-#gas_adjustment = 0.1
-#clock_drift ='5s'
-#trusting_period = '14days'
-#trust_threshold = { numerator = '1', denominator = '3' }
-#[chains.packet_filter]
-#policy = 'allow'
+[[chains]]
+id = 'irishub-1'
+rpc_addr = 'http://127.0.0.1:2121'
+grpc_addr = 'http://127.0.0.1:2122'
+websocket_addr = 'ws://127.0.0.1:2121/websocket'
+rpc_timeout = '10s'
+account_prefix = 'iaa'
+key_name = 'iris'
+store_prefix = 'ibc'
+max_gas = 2000000
+max_tx_size = 1800000
+gas_price = { price = 0.001, denom = 'uiris' }
+gas_adjustment = 0.1
+clock_drift ='5s'
+trusting_period = '14days'
+trust_threshold = { numerator = '1', denominator = '3' }
+[chains.packet_filter]
+policy = 'allow'
 #list = [
-#   ['transfer', 'channel-12'],['transfer', 'channel-3']
+   ['transfer', 'channel-12'],['transfer', 'channel-3']
 # ]
 
 #[[chains]]
@@ -182,50 +182,50 @@ list = [
 #trust_threshold = { numerator = '1', denominator = '3' }
 
 
-#[[chains]]
-#id = 'regen-1'
-#rpc_addr = 'http://127.0.0.1:2061'
-#grpc_addr = 'http://127.0.0.1:2062'
-#websocket_addr = 'ws://127.0.0.1:2061/websocket'
-#account_prefix = 'regen'
-#key_name = 'regen'
-#store_prefix = 'ibc'
-#max_gas = 2000000
-#max_tx_size = 180000
-#gas_price = { price = 0.001, denom = 'uregen' }
-#gas_adjustment = 0.1
-#clock_drift ='5s'
-#trusting_period = '14days'
-#trust_threshold = { numerator = '1', denominator = '3' }
-#[chains.packet_filter]
-#policy = 'allow'
-#list = [
+[[chains]]
+id = 'regen-1'
+rpc_addr = 'http://127.0.0.1:2061'
+grpc_addr = 'http://127.0.0.1:2062'
+websocket_addr = 'ws://127.0.0.1:2061/websocket'
+account_prefix = 'regen'
+key_name = 'regen'
+store_prefix = 'ibc'
+max_gas = 2000000
+max_tx_size = 180000
+gas_price = { price = 0.001, denom = 'uregen' }
+gas_adjustment = 0.1
+clock_drift ='5s'
+trusting_period = '14days'
+trust_threshold = { numerator = '1', denominator = '3' }
+[chains.packet_filter]
+policy = 'allow'
+list = [
 #   ['transfer', 'channel-12'],['transfer', 'channel-3']
-# ]
+ ]
 
 
 
-#[[chains]]
-#id = 'cosmoshub-4'
-#rpc_addr = 'http://127.0.0.1:2011'
-#grpc_addr = 'http://127.0.0.1:2012'
-#websocket_addr = 'ws://127.0.0.1:2011/websocket'
-#rpc_timeout = '10s'
-#account_prefix = 'cosmos'
-#key_name = 'cosmos'
-#store_prefix = 'ibc'
-#max_tx_size = 180000
-#max_gas = 3000000
-#gas_price = { price = 0.001, denom = 'uatom' }
-#gas_adjustment = 0.1
-#clock_drift ='5s'
-#trusting_period = '14days'
-#trust_threshold = { numerator = '1', denominator = '3' }
-#[chains.packet_filter]
-#policy = 'allow'
-#list = [
+[[chains]]
+id = 'cosmoshub-4'
+rpc_addr = 'http://127.0.0.1:2011'
+grpc_addr = 'http://127.0.0.1:2012'
+websocket_addr = 'ws://127.0.0.1:2011/websocket'
+rpc_timeout = '10s'
+account_prefix = 'cosmos'
+key_name = 'cosmos'
+store_prefix = 'ibc'
+max_tx_size = 180000
+max_gas = 3000000
+gas_price = { price = 0.001, denom = 'uatom' }
+gas_adjustment = 0.1
+clock_drift ='5s'
+trusting_period = '14days'
+trust_threshold = { numerator = '1', denominator = '3' }
+[chains.packet_filter]
+policy = 'allow'
+list = [
 #   ['transfer', 'channel-182'],['transfer', 'channel-141'],['transfer', 'channel-186'],['transfer', 'channel-190'],['transfer', 'channel-187'],['transfer', 'channel-202']
-# ]
+ ]
 
 
 [[chains]]
@@ -252,72 +252,89 @@ list = [
 
 
 
-#[[chains]]
-#id = 'iov-mainnet-ibc'
-#rpc_addr = 'http://127.0.0.1:2071'
-#grpc_addr = 'http://127.0.0.1:2072'
-#websocket_addr = 'ws://127.0.0.1:2071/websocket'
-#rpc_timeout = '10s'
-#account_prefix = 'star'
-#key_name = 'iov'
-#max_tx_size = 450000
-#store_prefix = 'ibc'
-#max_gas = 2000000
-#gas_price = { price = 1.0, denom = 'uiov' }
-#gas_adjustment = 0.1
-#clock_drift ='5s'
-#trusting_period = '14days'
-#trust_threshold = { numerator = '1', denominator = '3' }
+[[chains]]
+id = 'iov-mainnet-ibc'
+rpc_addr = 'http://127.0.0.1:2071'
+grpc_addr = 'http://127.0.0.1:2072'
+websocket_addr = 'ws://127.0.0.1:2071/websocket'
+rpc_timeout = '10s'
+account_prefix = 'star'
+key_name = 'iov'
+max_tx_size = 450000
+store_prefix = 'ibc'
+max_gas = 2000000
+gas_price = { price = 1.0, denom = 'uiov' }
+gas_adjustment = 0.1
+clock_drift ='5s'
+trusting_period = '14days'
+trust_threshold = { numerator = '1', denominator = '3' }
+[chains.packet_filter]
+policy = 'allow'
+list = [
 
+ ]
 
+[[chains]]
+id = 'core-1'
+rpc_addr = 'http://127.0.0.1:2081'
+grpc_addr = 'http://127.0.0.1:2082'
+websocket_addr = 'ws://127.0.0.1:2081/websocket'
+rpc_timeout = '10s'
+account_prefix = 'persistence'
+key_name = 'persistence'
+store_prefix = 'ibc'
+max_gas = 2000000
+max_tx_size = 180000
+gas_price = { price = 0.001, denom = 'uxprt' }
+gas_adjustment = 0.1
+clock_drift ='5s'
+trusting_period = '14days'
+trust_threshold = { numerator = '1', denominator = '3' }
+[chains.packet_filter]
+policy = 'allow'
+list = [
 
-#[[chains]]
-#id = 'core-1'
-#rpc_addr = 'http://127.0.0.1:2081'
-#grpc_addr = 'http://127.0.0.1:2082'
-#websocket_addr = 'ws://127.0.0.1:2081/websocket'
-#rpc_timeout = '10s'
-#account_prefix = 'persistence'
-#key_name = 'persistence'
-#store_prefix = 'ibc'
-#max_gas = 2000000
-#max_tx_size = 180000
-#gas_price = { price = 0.001, denom = 'uxprt' }
-#gas_adjustment = 0.1
-#clock_drift ='5s'
-#trusting_period = '14days'
-#trust_threshold = { numerator = '1', denominator = '3' }
+ ]
 
+[[chains]]
+id = 'crypto-org-chain-mainnet-1'
+rpc_addr = 'http://127.0.0.1:2041'
+grpc_addr = 'http://127.0.0.1:2042'
+websocket_addr = 'ws://127.0.0.1:2041/websocket'
+rpc_timeout = '10s'
+account_prefix = 'cro'
+key_name = 'crypto'
+store_prefix = 'ibc'
+max_gas = 2000000
+max_tx_size = 450000
+gas_price = { price = 0.05, denom = 'basecro' }
+gas_adjustment = 0.1
+clock_drift ='5s'
+trusting_period = '14days'
+trust_threshold = { numerator = '1', denominator = '3' }
+[chains.packet_filter]
+policy = 'allow'
+list = [
 
-#[[chains]]
-#id = 'crypto-org-chain-mainnet-1'
-#rpc_addr = 'http://127.0.0.1:2041'
-#grpc_addr = 'http://127.0.0.1:2042'
-#websocket_addr = 'ws://127.0.0.1:2041/websocket'
-#rpc_timeout = '10s'
-#account_prefix = 'cro'
-#key_name = 'crypto'
-#store_prefix = 'ibc'
-#max_gas = 2000000
-#max_tx_size = 450000
-#gas_price = { price = 0.05, denom = 'basecro' }
-#gas_adjustment = 0.1
-#clock_drift ='5s'
-#trusting_period = '14days'
-#trust_threshold = { numerator = '1', denominator = '3' }
+ ]
 
-#[[chains]]
-#id = 'sifchain-1'
-#rpc_addr = 'http://127.0.0.1:2111'
-#grpc_addr = 'http://127.0.0.1:2112'
-#websocket_addr = 'ws://127.0.0.1:2111/websocket'
-#rpc_timeout = '10s'
-#account_prefix = 'sif'
-#key_name = 'sif'
-#store_prefix = 'ibc'
-#max_gas = 2000000
-#gas_price = { price = 0.001, denom = 'rowan' }
-#gas_adjustment = 0.1
-#clock_drift ='5s'
-#trusting_period = '14days'
-#trust_threshold = { numerator = '1', denominator = '3' }
+[[chains]]
+id = 'sifchain-1'
+rpc_addr = 'http://127.0.0.1:2111'
+grpc_addr = 'http://127.0.0.1:2112'
+websocket_addr = 'ws://127.0.0.1:2111/websocket'
+rpc_timeout = '10s'
+account_prefix = 'sif'
+key_name = 'sif'
+store_prefix = 'ibc'
+max_gas = 2000000
+gas_price = { price = 0.001, denom = 'rowan' }
+gas_adjustment = 0.1
+clock_drift ='5s'
+trusting_period = '14days'
+trust_threshold = { numerator = '1', denominator = '3' }
+[chains.packet_filter]
+policy = 'allow'
+list = [
+
+ ]
