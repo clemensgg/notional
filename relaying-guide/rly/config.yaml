@@ -19,7 +19,7 @@ chains:
 
 - key: emoney
   chain-id: emoney-3
-  rpc-addr: http://localhost:2141
+  rpc-addr: http://localhost:2171
   account-prefix: emoney
   gas-adjustment: 2
   gas-prices: 0.001ungm
@@ -37,7 +37,7 @@ chains:
 
 - key: osmosis
   chain-id: osmosis-1
-  rpc-addr: http://localhost:2009
+  rpc-addr: http://localhost:2001
   account-prefix: osmo
   gas-adjustment: 10
   gas-prices: 0.000uosmo
