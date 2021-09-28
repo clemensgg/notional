@@ -161,9 +161,9 @@ trusting_period = '14days'
 trust_threshold = { numerator = '1', denominator = '3' }
 [chains.packet_filter]
 policy = 'allow'
-#list = [
-   ['transfer', 'channel-12'],['transfer', 'channel-3']
-# ]
+list = [
+#   ['transfer', 'channel-12'],['transfer', 'channel-3']
+ ]
 
 #[[chains]]
 #id = 'dig-testnet-1'
